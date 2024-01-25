@@ -2,7 +2,6 @@ var express = require("express");
 var router = express.Router();
 var database = require("../database");
 
-/* GET home page. */
 router.get("/", function (req, res, next) {
   var query = `
   SELECT * FROM mahasiswa ORDER by nim DESC

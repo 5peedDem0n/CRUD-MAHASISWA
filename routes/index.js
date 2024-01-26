@@ -101,7 +101,7 @@ router.get("/delete/:nim", function (req, res, next) {
     if (error) {
       throw error;
     } else {
-      response.redirect("/");
+      res.redirect("/");
     }
   });
 });

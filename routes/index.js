@@ -78,6 +78,7 @@ router.post("/edit/:nim", function (req, res, next) {
   jenis_kelamin = "${jenis_kelamin}",
   prodi = "${prodi}",
   ipk = "${ipk}"
+  WHERE nim = "${nim_id}"
   `;
 
   database.query(query, function (err, data) {
